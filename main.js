@@ -41,7 +41,7 @@ function adicionaLinha() {
 function atualizaMedia() {
     const mediaFinal = calculaMedia();
 
-    document.getElementById('media_final-valor').innerHTML = mediaFinal;
+    document.getElementById('media_final-valor').innerHTML = mediaFinal.toFixed(2);
     document.getElementById('media_final-resultado').innerHTML = mediaFinal >= 7 ? spanAprovado : spanReprovado;
 }
 
